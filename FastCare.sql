@@ -4,21 +4,26 @@ use FastCare
 
 create table Patient(
 	name_ nvarchar(30),
-	pateintID nvarchar(30),
+	patientID nvarchar(30),
 	password_ nvarchar(30),
 	emailAddress nvarchar(30),
-	location_ nvarchar(30)
+	_Area nvarchar(30),
+    _Address nvarchar(30),
+    _City nvarchar(30)
 
 );
 
 Select* from Patient
+
 
 create table Doctor(
 	name_ nvarchar(30),
 	doctorID nvarchar(30),
 	password_ nvarchar(30),
 	emailAddress nvarchar(30),
-	clinicLocation_ nvarchar(30)
+	_Area nvarchar(30),
+    _Address nvarchar(30),
+    _City nvarchar(30)
 );
 
 Select* from Doctor
@@ -28,7 +33,9 @@ create table Pharmacy(
 	pharmacyName_ nvarchar(30),
 	emailAddress nvarchar(30),
 	password_ nvarchar(30),
-	pharmacyLocation_ nvarchar(30),
+	_Area nvarchar(30),
+    _Address nvarchar(30),
+    _City nvarchar(30),
 	timings nvarchar(30)
 );
 
@@ -39,7 +46,9 @@ create table Lab(
 	_labID nvarchar(30),
 	_emailAddress nvarchar(30),
 	_password nvarchar(30),
-	_lablocation nvarchar(30)
+	_Area nvarchar(30),
+    _Address nvarchar(30),
+    _City nvarchar(30)
 );
 
 select* from Lab
